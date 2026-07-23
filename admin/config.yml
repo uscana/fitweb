@@ -3,8 +3,7 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 
 # These lines should *not* be indented
-media_folder: "static/images" # Media files will be stored in the repo under static/images
-public_folder: "images" # The src attribute for uploaded media will begin with /images
+media_folder: "/images" # Media files will be stored in the repo under /images
 
 # Collection Config
 collections:
