@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- ==========================================================
+       1. SEO CORE META TAGS
+       ========================================================== -->
+  <title>fitweb.eu.org - Curated Gadgets, Health & Unique Goods</title>
+  <meta name="description" content="Discover curated products across Health, Gadgets & Tools, and Unique Goods on fitweb.eu.org. Find top deals and trending technology accessories.">
+  <meta name="keywords" content="curated products, modern gadgets, health accessories, unique goods, tech showcase, trending products">
+  <meta name="author" content="fitweb.eu.org">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://fitweb.eu.org/">
+
+  <!-- ==========================================================
+       2. WEBMASTER TOOLS VERIFICATION TAGS
+       ========================================================== -->
+  <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE_HERE" />
+  <meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE_HERE" />
+  <meta name="yandex-verification" content="YOUR_YANDEX_VERIFICATION_CODE_HERE" />
+  <meta name="p:domain_verify" content="YOUR_PINTEREST_VERIFICATION_CODE_HERE"/>
+
+  <!-- ==========================================================
+       3. SOCIAL MEDIA OPEN GRAPH (Facebook, WhatsApp, LinkedIn)
+       ========================================================== -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="fitweb.eu.org">
+  <meta property="og:title" content="fitweb.eu.org - Curated Products & Tools">
+  <meta property="og:description" content="Explore top-rated products in Health, Tech Gadgets, and Unique Accessories curated for quality.">
+  <meta property="og:image" content="https://fitweb.eu.org/assets/og-cover.jpg">
+  <meta property="og:url" content="https://fitweb.eu.org/">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@yourtwitterhandle">
+  <meta name="twitter:title" content="fitweb.eu.org">
+  <meta name="twitter:description" content="Explore top-rated products in Health, Tech Gadgets, and Unique Accessories.">
+  <meta name="twitter:image" content="https://fitweb.eu.org/assets/og-cover.jpg">
+
+  <!-- ==========================================================
+       4. FAVICON, TOUCH ICONS & PWA MANIFEST
+       ========================================================== -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <meta name="theme-color" content="#0d0f12">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ==========================================================
+       5. GOOGLE ANALYTICS 4 (GA4)
+       ========================================================== -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- ==========================================================
+       6. META PIXEL
+       ========================================================== -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '123456789012345');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=123456789012345&ev=PageView&noscript=1"/>
+  </noscript>
+
+  <style>
+    :root {
+      --bg-primary: #0d0f12;
+      --bg-surface: #161920;
+      --bg-card: #1f242d;
+      --accent-color: #2e8b57;
+      --accent-hover: #3ca36a;
+      --accent-blue: #3b82f6;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+      --radius: 12px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: var(--font-family);
+      line-height: 1.5;
+      padding-bottom: 40px;
+    }
+
+    a { color: inherit; text-decoration: none; transition: all 0.2s ease; }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* HEADER & LOGO */
+    header {
+      padding: 24px 0 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .logo-box {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: #fff;
+      padding: 14px 28px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+      text-transform: lowercase;
+      cursor: pointer;
+    }
+
+    .logo-box-img {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* UKURAN LOGO DIPERBESAR MENJADI 60px */
+    .site-logo {
+      height: 60px;
+      width: auto;
+      max-width: 280px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .header-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+    }
+
+    .utility-links { font-size: 0.85rem; color: var(--text-muted); }
+    .utility-links a:hover { color: var(--text-main); }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      overflow: hidden;
+      width: 280px;
+    }
+
+    .search-bar input {
+      background: transparent;
+      border: none;
+      padding: 10px 14px;
+      color: #fff;
+      font-size: 0.9rem;
+      width: 100%;
+      outline: none;
+    }
+
+    .search-bar button {
+      background: var(--bg-card);
+      border: none;
+      color: var(--text-muted);
+      padding: 10px 16px;
+      cursor: pointer;
+    }
+
+    /* NAVIGATION */
+    nav {
+      background-color: #111318;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      margin: 12px 0 24px;
+      padding: 0 20px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      height: 54px;
+      align-items: center;
+    }
+
+    nav ul li a { 
+      font-weight: 500; 
+      font-size: 0.95rem; 
+      color: var(--text-muted); 
+      cursor: pointer;
+    }
+    nav ul li a:hover, nav ul li a.active { color: #fff; }
+
+    /* HERO BANNER */
+    .hero-banner {
+      position: relative;
+      height: 360px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-lg);
+      margin-bottom: 30px;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .hero-bg-img {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      object-fit: cover;
+      opacity: 0.65;
+      display: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      padding: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      background: linear-gradient(180deg, transparent 0%, rgba(13, 15, 18, 0.95) 100%);
+    }
+
+    .post-title-card {
+      background: rgba(22, 101, 52, 0.9);
+      backdrop-filter: blur(8px);
+      padding: 20px 24px;
+      border-radius: var(--radius);
+      max-width: 480px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .post-title-card h2 { font-size: 1.35rem; font-weight: 700; color: #fff; margin-bottom: 6px; }
+    .post-title-card p { font-size: 0.85rem; color: rgba(255, 255, 255, 0.8); }
+
+    .btn-purchase {
+      background: var(--accent-color);
+      color: #fff;
+      padding: 12px 28px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(46, 139, 87, 0.4);
+      display: inline-block;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn-purchase:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+
+    /* GRID CATEGORIES */
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .category-column {
+      background: var(--bg-surface);
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      min-height: 420px;
+    }
+
+    .category-header {
+      background: var(--accent-color);
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .posts-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      flex-grow: 1;
+    }
+
+    .post-item {
+      display: flex;
+      gap: 14px;
+      background: var(--bg-card);
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      align-items: flex-start;
+      transition: transform 0.2s ease;
+    }
+
+    .post-item:hover { transform: translateX(4px); }
+
+    .post-thumb {
+      width: 70px;
+      height: 60px;
+      background: #2a303c;
+      border-radius: 6px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .post-info { display: flex; flex-direction: column; width: 100%; }
+    .post-info-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+    .post-info a { font-size: 0.9rem; font-weight: 600; color: var(--text-main); }
+    
+    .views-badge {
+      font-size: 0.7rem;
+      background: rgba(59, 130, 246, 0.2);
+      color: var(--accent-blue);
+      padding: 2px 8px;
+      border-radius: 12px;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+    }
+
+    .post-desc { 
+      font-size: 0.78rem; 
+      color: var(--text-muted); 
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .dynamic-view-section {
+      display: none;
+      background: var(--bg-surface);
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+      padding: 24px;
+      margin-bottom: 40px;
+    }
+
+    .dynamic-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .category-nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      margin-top: 18px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .nav-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      width: 34px;
+      height: 34px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      transition: all 0.2s ease;
+    }
+
+    .nav-btn:hover:not(:disabled) {
+      background: var(--accent-blue);
+      border-color: var(--accent-blue);
+    }
+
+    .nav-btn:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+
+    footer {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 20px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 992px) {
+      .categories-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 576px) {
+      .site-logo { height: 42px; } /* Menyesuaikan di layar HP */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <!-- HEADER LOGO -->
+      <a href="./" class="logo-box-img" onclick="showHomeView()">
+        <img src="./logo.png" alt="fitweb.eu.org" class="site-logo" onerror="this.style.display='none'; document.getElementById('fallbackLogo').style.display='block';">
+        <div class="logo-box" id="fallbackLogo" style="display:none;">fitweb.eu.org</div>
+      </a>
+
+      <div class="header-right">
+        <div class="utility-links">
+          <a href="legal.html#about">About</a> | 
+          <a href="legal.html#toc">TOC</a> | 
+          <a href="legal.html#privacy">Privacy Policy</a>
+        </div>
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="Search product or category..." onkeyup="handleSearch()">
+          <button type="button">&#128065;</button>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#" id="navHome" class="active" onclick="showHomeView()">Home</a></li>
+        <li><a href="#" id="navTrending" onclick="showTrendingView()">Trending</a></li>
+      </ul>
+    </nav>
+
+    <!-- SHUFFLE HERO BANNER -->
+    <section class="hero-banner" id="heroBanner">
+      <img src="" alt="Feature Image" class="hero-bg-img" id="heroImage">
+      <div class="hero-content">
+        <div class="post-title-card">
+          <h2 id="heroTitle">Detecting Folders...</h2>
+          <p id="heroCategory">Please wait</p>
+        </div>
+        <a id="heroLink" href="#" target="_blank" onclick="trackViewFromLink(this)">
+          <button class="btn-purchase" id="heroBtn">Purchase Now</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- VIEW 1: HOME -->
+    <main class="categories-grid" id="categoriesView">
+      <section class="category-column">
+        <div class="category-header">Health</div>
+        <div class="posts-list" id="health-posts"></div>
+        <div class="category-nav">
+          <button class="nav-btn" onclick="changePage('Health', -1)">&lt;</button>
+          <button class="nav-btn" onclick="changePage('Health', 1)">&gt;</button>
+        </div>
+      </section>
+
+      <section class="category-column">
+        <div class="category-header">Gadget &amp; Tools</div>
+        <div class="posts-list" id="gadget-posts"></div>
+        <div class="category-nav">
+          <button class="nav-btn" onclick="changePage('Gadget & Tools', -1)">&lt;</button>
+          <button class="nav-btn" onclick="changePage('Gadget & Tools', 1)">&gt;</button>
+        </div>
+      </section>
+
+      <section class="category-column">
+        <div class="category-header">Unique Goods</div>
+        <div class="posts-list" id="unique-posts"></div>
+        <div class="category-nav">
+          <button class="nav-btn" onclick="changePage('Unique Goods', -1)">&lt;</button>
+          <button class="nav-btn" onclick="changePage('Unique Goods', 1)">&gt;</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- VIEW 2: DYNAMIC SECTION (SEARCH & TRENDING) -->
+    <section class="dynamic-view-section" id="dynamicView">
+      <div class="category-header" id="dynamicHeader">Title Header</div>
+      <div class="dynamic-grid" id="dynamicGrid"></div>
+      <div class="category-nav">
+        <button class="nav-btn" id="dynamicPrevBtn" onclick="changeDynamicPage(-1)">&lt;</button>
+        <button class="nav-btn" id="dynamicNextBtn" onclick="changeDynamicPage(1)">&gt;</button>
+      </div>
+    </section>
+
+    <footer>
+      Footer &copy; 2026 fitweb.eu.org. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    let discoveredPosts = [];
+    const POSTS_PER_PAGE = 8;
+    
+    const currentPageState = {
+      'Health': 0,
+      'Gadget & Tools': 0,
+      'Unique Goods': 0
+    };
+
+    let dynamicPostsList = [];
+    let dynamicCurrentPage = 0;
+    let currentMode = 'HOME';
+
+    const categoryElementMap = {
+      'Health': 'health-posts',
+      'Gadget & Tools': 'gadget-posts',
+      'Unique Goods': 'unique-posts'
+    };
+
+    function getPostViews(folder) {
+      const viewsData = JSON.parse(localStorage.getItem('portal_post_views') || '{}');
+      return viewsData[folder] || 0;
+    }
+
+    function recordPostView(folder) {
+      const viewsData = JSON.parse(localStorage.getItem('portal_post_views') || '{}');
+      viewsData[folder] = (viewsData[folder] || 0) + 1;
+      localStorage.setItem('portal_post_views', JSON.stringify(viewsData));
+    }
+
+    function trackViewFromLink(element) {
+      const folder = element.getAttribute('data-folder');
+      if (folder) recordPostView(folder);
+    }
+
+    async function autoDetectAnySubfolders() {
+      try {
+        const response = await fetch('/api/posts');
+        if (!response.ok) throw new Error("Failed to retrieve posts from server");
+
+        discoveredPosts = await response.json();
+        renderLayout();
+
+      } catch (error) {
+        console.warn("Error detecting subfolders:", error);
+      }
+    }
+
+    function renderCategoryColumn(categoryName) {
+      const elementId = categoryElementMap[categoryName];
+      if (!elementId) return;
+
+      const container = document.getElementById(elementId);
+      const parentColumn = container.closest('.category-column');
+      const prevBtn = parentColumn.querySelector('.category-nav .nav-btn:first-child');
+      const nextBtn = parentColumn.querySelector('.category-nav .nav-btn:last-child');
+      
+      const matchingPosts = discoveredPosts.filter(
+        p => p.category.trim().toLowerCase() === categoryName.trim().toLowerCase()
+      );
+
+      const totalPosts = matchingPosts.length;
+      const currentPage = currentPageState[categoryName] || 0;
+      
+      const startIndex = currentPage * POSTS_PER_PAGE;
+      const paginatedPosts = matchingPosts.slice(startIndex, startIndex + POSTS_PER_PAGE);
+
+      if (paginatedPosts.length === 0) {
+        container.innerHTML = '<div style="color:var(--text-muted); font-size:0.85rem; padding:10px 0;">No items in this page.</div>';
+      } else {
+        container.innerHTML = paginatedPosts.map(post => {
+          return `
+            <div class="post-item">
+              ${post.iconImg ? `<img src="${post.iconImg}" alt="${post.title}" class="post-thumb">` : `<div class="post-thumb"></div>`}
+              <div class="post-info">
+                <div class="post-info-header">
+                  <a href="./${post.folder}/" onclick="recordPostView('${post.folder}')">${post.title}</a>
+                </div>
+                <span class="post-desc">${post.description || 'No description available.'}</span>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      prevBtn.disabled = currentPage === 0;
+      nextBtn.disabled = startIndex + POSTS_PER_PAGE >= totalPosts;
+    }
+
+    function changePage(categoryName, direction) {
+      const matchingPosts = discoveredPosts.filter(
+        p => p.category.trim().toLowerCase() === categoryName.trim().toLowerCase()
+      );
+      
+      const maxPage = Math.ceil(matchingPosts.length / POSTS_PER_PAGE) - 1;
+      let newPage = (currentPageState[categoryName] || 0) + direction;
+
+      if (newPage >= 0 && newPage <= maxPage) {
+        currentPageState[categoryName] = newPage;
+        renderCategoryColumn(categoryName);
+      }
+    }
+
+    function showHomeView() {
+      currentMode = 'HOME';
+      document.getElementById('searchInput').value = '';
+      document.getElementById('heroBanner').style.display = 'flex';
+      document.getElementById('categoriesView').style.display = 'grid';
+      document.getElementById('dynamicView').style.display = 'none';
+
+      document.getElementById('navHome').classList.add('active');
+      document.getElementById('navTrending').classList.remove('active');
+
+      Object.keys(categoryElementMap).forEach(cat => renderCategoryColumn(cat));
+    }
+
+    function handleSearch() {
+      const query = document.getElementById('searchInput').value.trim().toLowerCase();
+
+      if (query === '') {
+        showHomeView();
+        return;
+      }
+
+      currentMode = 'SEARCH';
+      document.getElementById('heroBanner').style.display = 'none';
+      document.getElementById('categoriesView').style.display = 'none';
+      document.getElementById('dynamicView').style.display = 'block';
+
+      document.getElementById('navHome').classList.remove('active');
+      document.getElementById('navTrending').classList.remove('active');
+
+      dynamicPostsList = discoveredPosts.filter(post => 
+        post.title.toLowerCase().includes(query) ||
+        (post.description && post.description.toLowerCase().includes(query)) ||
+        post.category.toLowerCase().includes(query)
+      );
+
+      dynamicCurrentPage = 0;
+      renderDynamicGrid(`Search Results for "${query}" (${dynamicPostsList.length} found)`);
+    }
+
+    function showTrendingView() {
+      currentMode = 'TRENDING';
+      document.getElementById('searchInput').value = '';
+
+      document.getElementById('heroBanner').style.display = 'none';
+      document.getElementById('categoriesView').style.display = 'none';
+      document.getElementById('dynamicView').style.display = 'block';
+
+      document.getElementById('navHome').classList.remove('active');
+      document.getElementById('navTrending').classList.add('active');
+
+      dynamicPostsList = [...discoveredPosts].sort((a, b) => {
+        return getPostViews(b.folder) - getPostViews(a.folder);
+      });
+
+      dynamicCurrentPage = 0;
+      renderDynamicGrid('🔥 Trending Products (Sorted by Views)');
+    }
+
+    function renderDynamicGrid(headerTitle) {
+      const grid = document.getElementById('dynamicGrid');
+      const header = document.getElementById('dynamicHeader');
+      const prevBtn = document.getElementById('dynamicPrevBtn');
+      const nextBtn = document.getElementById('dynamicNextBtn');
+
+      header.innerText = headerTitle;
+
+      if (dynamicPostsList.length === 0) {
+        grid.innerHTML = '<div style="color:var(--text-muted); padding:20px 0;">No items available.</div>';
+        prevBtn.disabled = true;
+        nextBtn.disabled = true;
+        return;
+      }
+
+      const startIndex = dynamicCurrentPage * POSTS_PER_PAGE;
+      const paginatedResults = dynamicPostsList.slice(startIndex, startIndex + POSTS_PER_PAGE);
+
+      grid.innerHTML = paginatedResults.map(post => {
+        const views = getPostViews(post.folder);
+        return `
+          <div class="post-item">
+            ${post.iconImg ? `<img src="${post.iconImg}" alt="${post.title}" class="post-thumb">` : `<div class="post-thumb"></div>`}
+            <div class="post-info">
+              <div class="post-info-header">
+                <a href="./${post.folder}/" onclick="recordPostView('${post.folder}')">${post.title}</a>
+                <span class="views-badge">${views} views</span>
+              </div>
+              <span class="post-desc">${post.description || 'No description available.'}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      prevBtn.disabled = dynamicCurrentPage === 0;
+      nextBtn.disabled = startIndex + POSTS_PER_PAGE >= dynamicPostsList.length;
+    }
+
+    function changeDynamicPage(direction) {
+      const maxPage = Math.ceil(dynamicPostsList.length / POSTS_PER_PAGE) - 1;
+      let newPage = dynamicCurrentPage + direction;
+
+      if (newPage >= 0 && newPage <= maxPage) {
+        dynamicCurrentPage = newPage;
+        const title = currentMode === 'TRENDING' 
+          ? '🔥 Trending Products (Sorted by Views)' 
+          : `Search Results for "${document.getElementById('searchInput').value.trim()}"`;
+        renderDynamicGrid(title);
+      }
+    }
+
+    function renderLayout() {
+      Object.keys(categoryElementMap).forEach(cat => renderCategoryColumn(cat));
+
+      if (discoveredPosts.length > 0) {
+        const randomIndex = Math.floor(Math.random() * discoveredPosts.length);
+        const randomPost = discoveredPosts[randomIndex];
+
+        document.getElementById('heroTitle').innerText = randomPost.title;
+        document.getElementById('heroCategory').innerText = randomPost.description || `Category: ${randomPost.category}`;
+        
+        const heroLink = document.getElementById('heroLink');
+        let cleanCta = randomPost.ctaLink;
+        if (cleanCta.endsWith('/index.html')) {
+            cleanCta = cleanCta.replace('/index.html', '/');
+        }
+        heroLink.href = cleanCta;
+        heroLink.setAttribute('data-folder', randomPost.folder);
+
+        const heroBtn = document.getElementById('heroBtn');
+        if (heroBtn && randomPost.price) {
+          heroBtn.innerText = `Purchase Now (${randomPost.price})`;
+        }
+
+        if (randomPost.featuredImg) {
+          const heroImg = document.getElementById('heroImage');
+          heroImg.src = randomPost.featuredImg;
+          heroImg.style.display = 'block';
+        }
+      } else {
+        document.getElementById('heroTitle').innerText = "No Subfolders Detected";
+        document.getElementById('heroCategory').innerText = "Create subfolders with index.html containing meta tags";
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', autoDetectAnySubfolders);
+  </script>
+</body>
+</html>

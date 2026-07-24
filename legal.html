@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>About Us, Terms of Condition & Privacy Policy - fitweb.eu.org</title>
+  <meta name="description" content="Official legal documentation, terms of service, privacy policy, and background information for fitweb.eu.org.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://fitweb.eu.org/legal.html">
+
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-primary: #0d0f12;
+      --bg-surface: #161920;
+      --bg-card: #1f242d;
+      --accent-color: #2e8b57;
+      --accent-hover: #3ca36a;
+      --accent-blue: #3b82f6;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+      --radius: 12px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: var(--font-family);
+      line-height: 1.6;
+      padding-bottom: 40px;
+    }
+
+    a { color: inherit; text-decoration: none; transition: all 0.2s ease; }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      padding: 24px 0 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .logo-box {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: #fff;
+      padding: 14px 28px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+      text-transform: lowercase;
+      display: inline-block;
+    }
+
+    .logo-box-img {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* UKURAN LOGO DIPERBESAR MENJADI 60px */
+    .site-logo {
+      height: 60px;
+      width: auto;
+      max-width: 280px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .header-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+    }
+
+    .utility-links { font-size: 0.85rem; color: var(--text-muted); }
+    .utility-links a { cursor: pointer; }
+    .utility-links a:hover, .utility-links a.active { color: var(--text-main); font-weight: 600; }
+
+    nav {
+      background-color: #111318;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      margin: 12px 0 24px;
+      padding: 0 20px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      height: 54px;
+      align-items: center;
+    }
+
+    nav ul li a { 
+      font-weight: 500; 
+      font-size: 0.95rem; 
+      color: var(--text-muted); 
+    }
+    nav ul li a:hover { color: #fff; }
+
+    .content-wrapper {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .sidebar-tabs {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      height: fit-content;
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      padding: 12px 16px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.2s ease;
+      font-family: var(--font-family);
+    }
+
+    .tab-btn:hover {
+      color: var(--text-main);
+      background: var(--bg-card);
+    }
+
+    .tab-btn.active {
+      background: var(--accent-color);
+      color: #fff;
+      border-color: var(--accent-hover);
+      box-shadow: 0 4px 12px rgba(46, 139, 87, 0.3);
+    }
+
+    .doc-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 36px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .doc-section { display: none; }
+    .doc-section.active { display: block; }
+
+    .doc-section h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 12px;
+    }
+
+    .last-updated {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    .doc-section h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--accent-blue);
+      margin: 24px 0 10px;
+    }
+
+    .doc-section p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+
+    .doc-section ul {
+      margin: 12px 0 16px 20px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .doc-section ul li { margin-bottom: 8px; }
+
+    footer {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 20px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 850px) {
+      .content-wrapper { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 576px) {
+      .site-logo { height: 42px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <!-- HEADER LOGO -->
+      <a href="./" class="logo-box-img">
+        <img src="./logo.png" alt="fitweb.eu.org" class="site-logo" onerror="this.style.display='none'; document.getElementById('fallbackLogo').style.display='block';">
+        <div class="logo-box" id="fallbackLogo" style="display:none;">fitweb.eu.org</div>
+      </a>
+
+      <div class="header-right">
+        <div class="utility-links">
+          <a onclick="switchTab('about')" id="utilAbout">About</a> | 
+          <a onclick="switchTab('toc')" id="utilToc">TOC</a> | 
+          <a onclick="switchTab('privacy')" id="utilPrivacy">Privacy Policy</a>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="./#trending">Trending</a></li>
+      </ul>
+    </nav>
+
+    <main class="content-wrapper">
+      <aside class="sidebar-tabs">
+        <button class="tab-btn active" id="tabBtnAbout" onclick="switchTab('about')">About Us</button>
+        <button class="tab-btn" id="tabBtnToc" onclick="switchTab('toc')">Terms of Condition</button>
+        <button class="tab-btn" id="tabBtnPrivacy" onclick="switchTab('privacy')">Privacy Policy</button>
+      </aside>
+
+      <section class="doc-card">
+        <!-- SECTION 1: ABOUT US -->
+        <article class="doc-section active" id="secAbout">
+          <h1>About Us</h1>
+          <p class="last-updated">Learn more about fitweb.eu.org and our platform's mission.</p>
+          <p>Welcome to <strong>fitweb.eu.org</strong>, your premier online hub dedicated to showcasing handpicked tools, lifestyle innovations, health gear, and unique tech goods. Our mission is to cut through the noise of the modern digital market by offering a curated, structured, and seamless discovery experience.</p>
+          <h2>Who We Are</h2>
+          <p>At <strong>fitweb.eu.org</strong>, we operate as an independent aggregator and digital showcase. We systematically discover and catalog products across key categories like Health, Gadgets & Tools, and Unique Goods to help our users find practical solutions quickly.</p>
+          <h2>Our Core Values</h2>
+          <ul>
+            <li><strong>Quality Curation:</strong> We focus on utility and quality rather than overwhelming listings. Every item showcased meets our criteria for innovation and consumer value.</li>
+            <li><strong>User Privacy First:</strong> We do not collect unnecessary personal tracking data. Browsing our portal is fast, private, and anonymous.</li>
+            <li><strong>Clean & Modern Experience:</strong> Designed with an ad-free, modern dark aesthetic that loads quickly on both desktop and mobile devices.</li>
+          </ul>
+          <h2>Contact & Partnerships</h2>
+          <p>If you have any questions, feedback, or business partnership inquiries regarding our showcase listings, feel free to contact us via email at: <strong>contact@fitweb.eu.org</strong>.</p>
+        </article>
+
+        <!-- SECTION 2: TERMS OF CONDITION (TOC) -->
+        <article class="doc-section" id="secToc">
+          <h1>Terms of Condition</h1>
+          <p class="last-updated">Last Updated: July 2026</p>
+          <p>Please read these Terms and Conditions ("Terms", "Terms of Condition") carefully before using the website <strong>https://fitweb.eu.org</strong> operated by fitweb.eu.org ("us", "we", or "our").</p>
+          <h2>1. Terms of Access</h2>
+          <p>By accessing or using the website, you agree to be bound by these Terms. If you disagree with any part of the terms, you may not access or use our services.</p>
+          <h2>2. Intellectual Property Rights</h2>
+          <p>Unless otherwise stated, fitweb.eu.org and/or its licensors own the intellectual property rights for all material on fitweb.eu.org. All intellectual property rights are reserved. Product names, logos, brands, and trademarks featured within individual subfolders remain the property of their respective owners.</p>
+          <h2>3. Third-Party Links & External Products</h2>
+          <p>Our website contains direct Call-To-Action (CTA) links to third-party merchant websites or external vendor landing pages that are not owned or controlled by fitweb.eu.org.</p>
+          <p>fitweb.eu.org has no control over, and assumes no responsibility for, the content, pricing, stock availability, privacy policies, or practices of any third-party websites or services.</p>
+          <h2>4. Disclaimer of Liability</h2>
+          <p>The materials on fitweb.eu.org are provided on an 'as is' basis. We make no warranties, expressed or implied, and hereby disclaim and negate all other warranties.</p>
+          <h2>5. Revisions and Modifications</h2>
+          <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time without prior notice.</p>
+        </article>
+
+        <!-- SECTION 3: PRIVACY POLICY -->
+        <article class="doc-section" id="secPrivacy">
+          <h1>Privacy Policy</h1>
+          <p class="last-updated">Last Updated: July 2026</p>
+          <p>At <strong>fitweb.eu.org</strong>, accessible from https://fitweb.eu.org, one of our main priorities is the privacy of our visitors.</p>
+          <h2>1. Minimal Data Collection</h2>
+          <p>We do not require user account registration, passwords, or payment submissions directly on fitweb.eu.org.</p>
+          <h2>2. Local Visitor Counting & Analytics</h2>
+          <p>To enable public features such as our <strong>"Trending Products"</strong> list, fitweb.eu.org records simple interaction clicks locally inside your web browser using HTML5 <code>localStorage</code> technology.</p>
+          <h2>3. Cookies and Web Beacons</h2>
+          <p>Like any other modern portal, fitweb.eu.org uses standard session cookies to optimize user experience.</p>
+          <h2>4. Third-Party Advertisers & Merchant Privacy Policies</h2>
+          <p>fitweb.eu.org's Privacy Policy does not apply to other advertisers, merchants, or external websites.</p>
+          <h2>5. GDPR & CCPA Compliance Rights</h2>
+          <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to data access, rectification, erasure, and restriction.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      Footer &copy; 2026 fitweb.eu.org. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    function switchTab(tabName) {
+      document.getElementById('secAbout').classList.remove('active');
+      document.getElementById('secToc').classList.remove('active');
+      document.getElementById('secPrivacy').classList.remove('active');
+
+      document.getElementById('tabBtnAbout').classList.remove('active');
+      document.getElementById('tabBtnToc').classList.remove('active');
+      document.getElementById('tabBtnPrivacy').classList.remove('active');
+
+      document.getElementById('utilAbout').classList.remove('active');
+      document.getElementById('utilToc').classList.remove('active');
+      document.getElementById('utilPrivacy').classList.remove('active');
+
+      if (tabName === 'toc') {
+        document.getElementById('secToc').classList.add('active');
+        document.getElementById('tabBtnToc').classList.add('active');
+        document.getElementById('utilToc').classList.add('active');
+        window.location.hash = 'toc';
+      } else if (tabName === 'privacy') {
+        document.getElementById('secPrivacy').classList.add('active');
+        document.getElementById('tabBtnPrivacy').classList.add('active');
+        document.getElementById('utilPrivacy').classList.add('active');
+        window.location.hash = 'privacy';
+      } else {
+        document.getElementById('secAbout').classList.add('active');
+        document.getElementById('tabBtnAbout').classList.add('active');
+        document.getElementById('utilAbout').classList.add('active');
+        window.location.hash = 'about';
+      }
+      
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.replace('#', '').toLowerCase();
+      if (hash === 'toc' || hash === 'privacy' || hash === 'about') {
+        switchTab(hash);
+      } else {
+        switchTab('about');
+      }
+    });
+  </script>
+</body>
+</html>
