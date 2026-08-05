@@ -50,8 +50,18 @@ function getPageMetaData(filePath) {
 const server = http.createServer((req, res) => {
     const currentDir = __dirname;
 
+    // [PERBAIKAN] -------------------------------------------------------------
+    // Mengambil URL yang diketik pengunjung, lalu membuang kode UTM/Parameter
+    // Contoh: "/halaman?pp=1" hanya akan diambil "/halaman"-nya saja.
+    const host = req.headers.host || 'localhost';
+    const baseURL = `http://${host}`;
+    const parsedUrl = new URL(req.url, baseURL);
+    const cleanPath = parsedUrl.pathname; 
+    // -------------------------------------------------------------------------
+
     // 1. API Endpoint
-    if (req.url === '/api/posts') {
+    // [PERBAIKAN] Mengubah req.url menjadi cleanPath
+    if (cleanPath === '/api/posts') {
         fs.readdir(currentDir, { withFileTypes: true }, (err, files) => {
             if (err) {
                 res.writeHead(500, { 'Content-Type': 'application/json' });
@@ -91,7 +101,8 @@ const server = http.createServer((req, res) => {
     }
 
     // 2. Main Route (index.html root)
-    else if (req.url === '/' || req.url === '/index.html') {
+    // [PERBAIKAN] Mengubah req.url menjadi cleanPath
+    else if (cleanPath === '/' || cleanPath === '/index.html') {
         fs.readFile(path.join(currentDir, 'index.html'), (err, content) => {
             if (err) {
                 res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' });
@@ -104,7 +115,8 @@ const server = http.createServer((req, res) => {
 
     // 3. Static Asset Router (Clean URL Support)
     else {
-        let reqPath = decodeURIComponent(req.url).replace(/^\.\//, '');
+        // [PERBAIKAN] Mengubah req.url menjadi cleanPath
+        let reqPath = decodeURIComponent(cleanPath).replace(/^\.\//, '');
         if (reqPath.startsWith('/')) reqPath = reqPath.substring(1);
 
         let filePath = path.join(currentDir, reqPath);
